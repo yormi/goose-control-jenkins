@@ -10,6 +10,7 @@ pipeline {
 
                 dir ('server') {
                   sh 'pwd'
+                  sh 'ls'
                   sh 'stack init'
                   sh 'stack build'
                 }
