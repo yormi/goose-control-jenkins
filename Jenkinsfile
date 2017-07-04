@@ -10,7 +10,7 @@ pipeline {
 
                 dir ('server') {
                   sh 'pwd'
-                  sh 'stack build --install-ghc'
+                  sh 'pwd && stack build'
                 }
             }
         }
