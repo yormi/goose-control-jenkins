@@ -10,7 +10,8 @@ pipeline {
 
                 dir ('server') {
                   sh 'pwd'
-                  sh 'pwd && stack build'
+                  sh 'stack init'
+                  sh 'stack build'
                 }
             }
         }
