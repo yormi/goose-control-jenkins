@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'stack build'
+                sh 'stack build --install-ghc'
             }
         }
         stage('Test') {
