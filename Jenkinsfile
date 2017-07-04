@@ -9,6 +9,7 @@ pipeline {
                 echo 'Building..'
 
                 dir ('server') {
+                  sh 'pwd'
                   sh 'stack build --install-ghc'
                 }
             }
